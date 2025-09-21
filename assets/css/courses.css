@@ -1,0 +1,272 @@
+:root{
+    --primary-color:#FF782D;
+    --title-font: "Exo", sans-serif;
+    --desctiption-font: "Jost", sans-serif;
+    --description-color: #555555;
+    --gray-background-color: #F5F5F5;
+}
+
+.banner{
+    margin-top: 72px;
+    padding: 0 70px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--gray-background-color);
+    font-family: var(--desctiption-font);
+    line-height: 150%;
+
+    .homepage{
+        margin: 0;
+        color: var(--description-color);
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .course, i{
+        margin: 0;
+        color: #9D9D9D;
+    }
+    i{
+        font-size: 12px;
+    }
+    
+}
+
+
+.courses{
+        margin: 56px 70px 70px;
+        .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            img{
+                cursor: pointer;
+            }
+            .search-group{
+                    padding-bottom: 8px;
+                    max-width: 270px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    &::after{
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                height: 1px;
+                                background-color: black;
+                                
+                            }
+                    input{
+                        border: none;
+                        outline: none;
+                        ::placeholder{
+                            font-family: var(--desctiption-font);
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 150%;
+                        }
+                    }
+                    i{
+                        cursor: pointer;
+                        &:hover{color: var(--primary-color);}
+                    }
+                }
+            } 
+        }
+        .cards{
+            margin: 50px 0 0;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-content: space-between;
+            align-items: center;
+            gap: 35px;
+
+            .cardd{
+                max-width: 385px;
+                border: 1px solid #EAEAEA;
+                border-radius: 20px;
+                position: relative;
+                .card-img{
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    width: 100%;
+                }
+                .photography{
+                    position: absolute;
+                    top:0;
+                    margin: 20px 20px;
+                    padding: 8px 12px;
+                    background-color: black;
+                    color: white;
+                    border-radius: 8px;
+                    font-family: var(--desctiption-font);
+                    font-weight: 500;
+                    line-height: 150%;
+                }
+                .by{
+                    margin: 20px 20px 12px;
+                    color: var(--description-color);
+                    font-family: var(--desctiption-font);
+                    font-weight: 400;
+                    span{
+                        color: black;
+                    }
+                }
+                .card-title{
+                    margin:0;
+                    padding: 0;
+                        margin: 0 20px 16px;
+                        font-family: var(--title-font);
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 120%;
+                    }
+                    .times-students{
+                        margin: 0 20px 0;
+                        padding-bottom: 16px;
+                        width: 214px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: relative;
+                        .times, .students{
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            gap: 8px;
+                            .info{
+                                margin: 0;
+                                font-family: var(--desctiption-font);
+                                color: var(--description-color);
+                                font-weight: 400;
+                            }
+                        }
+                        &::after{
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                width: 345px;
+                                height: 1px;
+                                background-color: #EAEAEA;
+                                
+                            }
+                    }
+                    .more{
+                        margin: 16px 20px 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        font-family: var(--desctiption-font);
+                        font-size: 18px;
+                        line-height: 150%;
+
+                        .left{
+                            display: flex;
+                            gap: 8px;
+
+                            .price{
+                                font-weight: 400;
+                                text-decoration: line-through;
+                                color: #9D9D9D;
+                            }
+                            .free{
+                                font-family: Jost;
+                                font-weight: 500;
+                                color: #55BE24;
+                            }
+                        }
+                        .view-more{
+                                font-weight: 500;
+                                cursor: pointer;
+                            }
+                    }
+                    &:hover{
+                        .card-title, .view-more{
+                            color: var(--primary-color);
+                        }
+                        .photography{
+                            background-color: #3737378b;
+                        }
+                        .card-img{
+                            backdrop-filter: lighten;
+                        }  
+                    }
+            }
+        }
+    }
+
+    .counter{
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            border: 1px solid var(--gray-background-color);
+            font-family: var(--desctiption-font);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            cursor: pointer;
+            &:hover, :active{
+                background-color: black;
+                color: white;
+            }
+        }
+        
+    }
+
+
+
+    @media screen and (max-width : 992px) {
+
+        .banner{
+            margin: 0;
+            margin-top: 90px;
+            padding: 0 20px;
+        }
+
+        .courses{
+        margin: 0;
+        margin: 56px 20px 0;
+        padding-bottom: 25px;
+
+        .header{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        }
+        .cards{
+            margin: 50px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 35px;
+            .cardd{
+                .times-students{
+                    &::after{
+                        width: 280px; 
+                    }
+                }
+            }
+            }
+        }
+
+
+    }
