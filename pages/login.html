@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/css/login.css">
+    <link rel="stylesheet" href="./../assets/css/nav&footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Login / Register - EduPress</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <nav>
+            <a href="#"><img src="./../assets/images/logo.png" class="logo" alt="Flora Logo"></a>
+            <ul>
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="./courses.html">Courses</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="#">Page <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Premium Theme</a></li>
+            </ul>
+            <div class="right-side">
+            <a href="#">Login / Register</a>
+            <div class="search"><a><i class="fa-solid fa-magnifying-glass"></i></a></div>
+            </div>
+
+            <i class="fa-solid fa-bars barsicon fs-2 d-lg-none" 
+            data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasResponsive" 
+            aria-controls="offcanvasResponsive">
+            </i> 
+            <div class="offcanvas offcanvas-end" data-bs-backdrop="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+                <img class="offcanvas-title" id="offcanvasResponsiveLabel" src="./../assets/images/small-logo.png" alt="logo">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="./../index.html">Home</a></li>
+                    <li class="list-group-item"><a href="./courses.html">Courses</a></li>
+                    <li class="list-group-item"><a href="./blog.html">Blog</a></li>
+                    <li class="list-group-item"><a href="#">Page</a><i class="fa-solid fa-chevron-down"></i></li>
+                    <li class="list-group-item"><a href="#">Premium Theme</a></li>
+                </ul>
+                <div class="search-group">
+                    <input type="search" name="search" placeholder="Search">
+                    <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <div class="offcanvas-btn"><button class="primary-button">Login</button></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <a href="./../index.html" class="homepage">Homepage</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <a href="#" class="course">Login / Register</a>
+    </div>
+
+    <section class="login-register">
+        <div class="login">
+            <h2 class="title">Login</h2>
+            <form action="">
+                <input type="text" placeholder="Email or username*" required>
+                <div class="password">
+                <input type="password" placeholder="Password*" required><i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </div>
+                <button class="primary-button">Login</button>
+                <a href="#">Lost your password?</a>
+            </form>
+        </div>
+
+        <div class="register">
+            <h2 class="title">Register</h2>
+            <form action="">
+                <input type="email" placeholder="Email*" required>
+                <input type="text" placeholder="Username*" required>
+                <div class="password">
+                <input type="password" placeholder="Password*" required><i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="password">
+                <input type="password" placeholder="Confirm Password*" required><i class="fa-solid fa-eye"></i>
+                </div>
+                <button class="primary-button">Register</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="footer">
+            <div class="sec1">
+                <img src="./../assets/images/logo.png" alt="flora logo" class="logo">
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+                <ul>
+                    <li>GET HELP</li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./blog.html">Latest Articles</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                </ul>
+                <ul>
+                    <li>PROGRAMS</li>
+                    <li><a href="./../index.html">Art & Design</a></li>
+                    <li><a href="./../index.html">Business</a></li>
+                    <li><a href="./../index.html">IT & Software</a></li>
+                    <li><a href="./../index.html">Languages</a></li>
+                    <li><a href="./../index.html">Programming</a></li>
+
+                </ul>
+
+
+            </div>
+            <div class="sec4">
+                <p class="title">CONTACT US</p>
+                <p class="location">Address: 2321 New Design Str, Lorem Ipsum10 Hudson Yards, USA </p>
+                <p class="tel">Tel: + (123) 2500-567-8988</p>
+                <p class="mail">Mail: supportlms@gmail.com</p>
+
+
+                <div class="logos">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="copyright">Copyright © 2024 LearnPress LMS | By Alaa Hefnawi</section>
+
+
+</body>
+</html>
